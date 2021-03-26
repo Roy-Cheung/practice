@@ -1,0 +1,46 @@
+article{
+	display:flex;flex-wrap: wrap;
+    justify-content: center;
+	background-color:#ffffff;
+}
+article>.item{
+	flex:auto; 
+	width:300px; margin:10px;
+	background-color:#cccccc;
+}
+@media (max-width:1200px){
+    main>.item{
+        width:45%;
+    }
+}
+@media (max-width:500px){
+    main>.item{
+        width:90%;
+    }
+}
+nav{
+    display: flex;
+}
+nav>.logo{
+    flex: none;
+    width: 100px;
+    background-color: aqua;
+
+}
+nav>.menu{
+    flex: auto;
+    background-color: aquamarine;
+}
+nav>.user{
+    flex: none;width: 100px;
+    background-color:aqua;
+}
+li{
+    flex:none;
+    background-color: aqua;
+}
+li>.hobby{
+    display: flex;
+    font-size: 3px;
+    justify-content: flex-end;
+}
